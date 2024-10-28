@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhoss Kumaresan - Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7uj1Up9CeRZ5gKQ2VkkvdVEfP4IJzFTqvg1aZL8oDlJ0Etx0yo6Zd4THfgzllYY+gkt/gW9EX5pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Santhoss's Portfolio</div>
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello, I'm</h3>
+            <h1>Santhoss Kumaresan</h1>
+            <h3>A <span class="multiple-text">Data Analyst | Developer | Tech Enthusiast</span></h3>
+            <p>Welcome to my portfolio. Here, you can explore my projects, skills, and ways to connect with me.</p>
+            <a href="Santhoss_Resume.pdf" class="btn" download>Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="images/profilepic.png" alt="Santhoss Kumaresan">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <h3>Data Analyst & Developer</h3>
+            <p>I'm passionate about using data to drive insights and impact decision-making. With a strong foundation in data analytics, programming, and problem-solving, I am constantly expanding my skill set to meet the demands of the tech industry.</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+        <div class="about-img">
+            <img src="images/aboutpic.png" alt="Santhoss Kumaresan">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>My Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Analysis</h3>
+                <p>Transforming data into insights to help businesses make better decisions.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive and functional websites to enhance digital presence.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Organizing, analyzing, and optimizing data storage solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>My Projects</h2>
+        <div class="portfolio-gallery">
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h4>E-Commerce Data Analysis</h4>
+                <p>Analyzing sales and customer data to uncover key insights.</p>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h4>Sales Data Insights</h4>
+                <p>Using SQL to identify top-performing products and regions.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/{your-form-id}" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Santhoss Kumaresan | All Rights Reserved</p>
+    </footer>
+
+    <!-- JavaScript for toggling the menu -->
+    <script src="scripts.js"></script>
+</body>
+</html>
